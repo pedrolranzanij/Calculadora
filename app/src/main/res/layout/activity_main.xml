@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorBackground"
+              tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/lcdTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="@string/resultado_calc"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textAlignment="textEnd"
+            android:textSize="50sp" android:layout_weight="0.1" android:fontFamily="@font/hind"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/ceBt"
+                style="@style/ButtonStyle"
+                android:text="@string/ce"/>
+
+        <Button
+                android:id="@+id/cBt"
+                style="@style/ButtonStyle"
+                android:text="@string/c"/>
+
+        <Button
+                android:id="@+id/raizQuadradaBt"
+                style="@style/ButtonStyle"
+                android:text="@string/raizQuadrada"
+                android:textColor="@android:color/holo_orange_dark"/>
+
+        <Button
+                android:id="@+id/porcentagemBt"
+                style="@style/ButtonStyle"
+                android:text="@string/porcentagem"
+                android:textColor="@android:color/holo_orange_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/seteBt"
+                style="@style/ButtonStyle"
+                android:text="@string/sete"/>
+
+        <Button
+                android:id="@+id/oitoBt"
+                style="@style/ButtonStyle"
+                android:text="@string/oito"/>
+
+        <Button
+                android:id="@+id/noveBt"
+                style="@style/ButtonStyle"
+                android:text="@string/nove"/>
+
+        <Button
+                android:id="@+id/adicaoBt"
+                style="@style/ButtonStyle"
+                android:text="@string/adicao"
+                android:textColor="@android:color/holo_orange_dark"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/quatroBt"
+                style="@style/ButtonStyle"
+                android:text="@string/quatro" android:onClick="onClickBtNum"/>
+
+        <Button
+                android:id="@+id/cincoBt"
+                style="@style/ButtonStyle"
+                android:text="@string/cinco" android:onClick="onClickBtNum"/>
+
+        <Button
+                android:id="@+id/seisBt"
+                style="@style/ButtonStyle"
+                android:text="@string/seis" android:onClick="onClickBtNum"/>
+
+        <Button
+                android:id="@+id/subtracaoBt"
+                style="@style/ButtonStyle"
+                android:text="@string/subtracao"
+                android:textColor="@android:color/holo_orange_dark" android:onClick="onClickBtSub"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/umBt"
+                style="@style/ButtonStyle"
+                android:text="@string/um"/>
+
+        <Button
+                android:id="@+id/doisBt"
+                style="@style/ButtonStyle"
+                android:text="@string/dois"/>
+
+        <Button
+                android:id="@+id/tresBt"
+                style="@style/ButtonStyle"
+                android:text="@string/tres"/>
+
+        <Button
+                android:id="@+id/multiplicacaoBt"
+                style="@style/ButtonStyle"
+                android:text="@string/multiplicacao"
+                android:textColor="@android:color/holo_orange_dark"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/zeroBt"
+                style="@style/ButtonStyle"
+                android:text="@string/zero"/>
+
+        <Button
+                android:id="@+id/pontoBt"
+                style="@style/ButtonStyle"
+                android:text="@string/_ponto"/>
+
+        <Button
+                android:id="@+id/resultadoBt"
+                style="@style/ButtonStyle"
+                android:text="@string/resultado"/>
+
+        <Button
+                android:id="@+id/divisaoBt"
+                style="@style/ButtonStyle"
+                android:text="@string/divisao"
+                android:textColor="@android:color/holo_orange_dark"/>
+
+    </LinearLayout>
+
+</LinearLayout>
